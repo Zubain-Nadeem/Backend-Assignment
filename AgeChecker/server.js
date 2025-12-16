@@ -5,7 +5,7 @@ const authRouter = require("./router/authRouter")
 
 app.use(express.json())
 
-app.use("/auth" , authRouter)
+app.use("/" , authRouter)
 
 app.listen(PORT, () =>
   console.log(`Server is running successfully on port ${PORT}`)
