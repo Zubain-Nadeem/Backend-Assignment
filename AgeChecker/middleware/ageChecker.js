@@ -1,8 +1,7 @@
 const ageChecker = (req, res, next) => {
-
   const age = req.body.age;
 
-  if(age === undefined){
+  if (age === undefined) {
     return res.send(`Age is not Define`);
   }
   if (age < 18) {
